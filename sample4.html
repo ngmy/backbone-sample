@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>Backbone.js sample</title>
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/jquery.ba-serializeobject.min.js"></script>
+  <script src="javascripts/underscore-min.js"></script>
+  <script src="javascripts/backbone-min.js"></script>
+  <script src="javascripts/ICanHaz.min.js"></script>
+  <script src="javascripts/sample4.js"></script>
+  <script id="timeline_template" type="text/html">
+{{#results}}
+<ul>
+  <div>
+    <img src="{{image_profile_url}}" width="48px" height="48px">
+  </div>
+  <div>{{name}}</div>
+  <div>{{text}}</div>
+</ul>
+{{/results}}
+  </script>
+</head>
+<body>
+<div id="app">
+  <a href="javaScript:void(0);" id="get_timeline">get timeline</a>
+  <div id="timeline">
+  </div>
+</div>
+</body>
+</html>
+
